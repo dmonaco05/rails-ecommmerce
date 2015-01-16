@@ -1,0 +1,12 @@
+cheap:
+  customer: dom
+  credit_card: dom_visa
+  total_amount: 4
+expensive:
+  customer: dom
+  credit_card: dom_visa
+  total_amount: 38
+free:
+  customer: dom
+  credit_card: dom_visa
+  total_amount: 0

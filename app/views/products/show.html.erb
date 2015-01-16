@@ -1,0 +1,20 @@
+<h1><%= @product.name %></h1>
+
+<p>
+<div class="row">
+  <%= image_tag @product.image_url, alt: @product.image_url, width: 400 %>
+</div>
+<div class="row">
+  <%= number_to_currency @product.price %>
+</div>
+
+<div class="row">
+  <p class="col-xs-6 col-sm-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, sed ex aspernatur illum autem nihil excepturi molestias commodi earum pariatur! Asperiores, delectus iure quae perferendis amet! Impedit veritatis.</p>
+</div>
+</p>
+<p>
+  <%= button_to add_product_to_cart_path(@product), class: 'btn btn-success' do %>
+    <span class="glyphicon glyphicon-shopping-cart"></span>
+    Add To Cart
+  <% end %>
+</p>
